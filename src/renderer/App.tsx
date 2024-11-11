@@ -1,14 +1,11 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-
-import ApplicationLayout from '@/app/ApplicationLayout';
-
-import HomePage from '@/app/pages/HomePage';
-import './App.css';
+import ApplicationLayout from '@/src/renderer/app/ApplicationLayout';
+import HomePage from '@/src/renderer/app/pages/HomePage';
 
 export default function App() {
   return (
     <>
-      <div>Shared modal, or shared toast here</div>
+      <div className="bg-blue-500">Shared modal, or shared toast here</div>
       <Router>
         <ApplicationLayout>
           <Routes>
